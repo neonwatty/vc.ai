@@ -62,8 +62,6 @@ segments.forEach((segment, index) => {
   segmentEl.style.background = getSegmentColor(index);
   
   // Set segment size according to the angle
-  const degToRad = Math.PI / 180;
-  const skew = 90 - segmentAngle;
   segmentEl.style.clipPath = `polygon(0 0, 100% 0, 50% 100%)`;
   segmentEl.style.transformOrigin = `center bottom`;
   
